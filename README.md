@@ -3,7 +3,7 @@
 The QJDatetime component provides a method to input dates and time or both in persian system called Jalali. There is also one more version available: QJDatetimePicker.
 This component have been created just to used in [`quasar-framework`](https://quasar-framework.org).
 
-# Installation
+## Installation
 
 To convert Gregorian date to Jalali system, this component use [`Persian Date`](http://babakhani.github.io/PersianWebToolkit/doc/persian-date) library. So you have to install it by run this command:
 
@@ -28,15 +28,16 @@ export default ({ app, Vue }) => {
 
 You have to edit `quasar.conf.js` and register the plugin:
 ```json
-plugins: [
-  // ...
-  'qjdatetime'
-],
+{
+    "plugins": [
+      "qjdatetime"
+    ]
+}
 ```
 
 It's Done. You are ready to enjoy using the component.
 
-#Usage
+## Usage
 
 The usage of this component is exactly same as `Datetime` and `DatetimePicker` of quasar-framework, so you can read [`original document`](https://quasar-framework.org/components/datetime-input.html).
 
