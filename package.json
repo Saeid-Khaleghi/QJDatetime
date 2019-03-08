@@ -1,6 +1,6 @@
 {
   "name": "qjdatetime",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Quasar component to manipulate Persian date system called Jalali.",
   "main": "index.js",
   "keywords": [
