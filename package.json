@@ -1,8 +1,8 @@
 {
   "name": "qjdatetime",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Quasar component to manipulate Persian date system called Jalali.",
-  "main": "index.js",
+  "main": "src/index.js",
   "keywords": [
     "vue",
     "component",
@@ -20,5 +20,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Saeid Khaleghi <saeid.khaleghi@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "persian-date": "^1.0.5"
+  }
 }
