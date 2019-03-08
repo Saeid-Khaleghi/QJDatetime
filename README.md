@@ -1,3 +1,8 @@
+[![npm](https://img.shields.io/npm/l/qjdatetime.svg?maxAge=2592000)](https://github.com/Saeid-Khaleghi/QJDatetime/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/dt/qjdatetime.svg)](https://www.npmjs.com/package/qjdatetime)
+
+![image](https://user-images.githubusercontent.com/13361616/54028443-3d51bc00-41ba-11e9-8b05-97bbad689542.png)
+
 # QJDatetime
 
 The QJDatetime component provides a method to input dates and time or both in persian system called Jalali. There is also one more version available: QJDatetimePicker.
@@ -41,3 +46,6 @@ It's Done. You are ready to enjoy using the component.
 
 The usage of this component is exactly same as `Datetime` and `DatetimePicker` of quasar-framework, so you can read [`original document`](https://quasar-framework.org/components/datetime-input.html).
 
+## License
+
+Media-store is free software distributed under the terms of the MIT license.
