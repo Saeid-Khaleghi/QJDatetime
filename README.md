@@ -1,6 +1,7 @@
 [![npm](https://img.shields.io/npm/l/qjdatetime.svg?maxAge=2592000)](https://github.com/Saeid-Khaleghi/QJDatetime/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/dt/qjdatetime.svg)](https://www.npmjs.com/package/qjdatetime)
 
+![image](https://user-images.githubusercontent.com/13361616/54028443-3d51bc00-41ba-11e9-8b05-97bbad689542.png)
 
 # QJDatetime
 
@@ -97,6 +98,25 @@ Supports v-model which must be a String, Number or [`PersianDate`](http://babakh
 |cancel-label |String|Text for the button to cancel input with no change (when using Modal).|
 |header-label	 |String|Override weekday string on popup. Applies to Material theme only.|
 
+## Common input frame properties
+
+|Property	|Type|	Description|
+|-----------|----|-------------|
+|prefix	|String|	A text that should be shown before the value of model.|
+|suffix	|String|	A text that should be shown after the value of model.|
+|float-label	|String|	A text label that will “float” up above the input field, once the input field gets focus.|
+|stack-label	|String|	A text label that will be shown above the input field and is static.|
+|color	|String|	One from Quasar Color Palette.|
+|inverted	|Boolean|	Inverted mode. Color is applied to background instead.|
+|inverted-light	|Boolean|	Inverted mode with a light color. Color is applied to background instead.|
+|dark	|Boolean|	Is component rendered on a dark background?|
+|align	|String|	One of ‘left’, ‘center’ or ‘right’ which determines the text align.|
+|disable	|Boolean|	If set to true, component is disabled and the user cannot change model.|
+|warning	|Boolean|	If set to true, the input fields colors are changed to show there is a warning.|
+|error	|Boolean|	If set to true, the input fields colors are changed to show there is an error.|
+|before	|Array| of Objects	Icon buttons on left side of input frame. Read below more details.|
+|after	|Array| of Objects	Icon buttons on right side of input frame. Read below more details.|
+|no-parent-field	|Boolean|	Avoid trying to connect to a parent QField.|
 
 
 ## License
