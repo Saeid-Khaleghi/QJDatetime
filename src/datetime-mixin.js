@@ -119,10 +119,6 @@ export default {
       let
         hour = this.model.hours(),
         offset = this.am ? 12 : -12
-
-      console.log('Toggled AmPm:hour ', hour)
-      console.log('Toggled AmPm:offset', offset)
-      console.log('Toggled AmPm:am?', this.am)
       this.model = new PersianDate(this.model).hours(hour + offset)
     },
 
