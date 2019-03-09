@@ -16,13 +16,7 @@ This component have been created just to used in [`quasar-framework`](https://qu
 
 ## Installation
 
-To convert Gregorian date to Jalali system, this component use [`Persian Date`](http://babakhani.github.io/PersianWebToolkit/doc/persian-date) library. So you have to install it by run this command:
-
-```bash
-npm i persian-date
-``` 
-
-You are ready to install this package by running this command:
+First, Install the component by running this command:
 ```bash
 npm i qjdatetime
 ```
@@ -46,7 +40,7 @@ You have to edit `quasar.conf.js` and register the plugin:
 }
 ```
 
-It's Done. You are ready to enjoy using the component.
+It's Done. You are ready to enjoy **QJDatetime**.
 
 ## Basic Usage
 ```html
