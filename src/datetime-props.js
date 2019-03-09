@@ -37,7 +37,10 @@ export const inline = {
     default: null
   },
   headerLabel: String,
-  firstDayOfWeek: Number,
+  firstDayOfWeek: {
+    type: Number,
+    default: 0
+  },
   formatModel: {
     type: String,
     default: 'auto',

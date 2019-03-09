@@ -58,7 +58,6 @@ It's Done. You are ready to enjoy **QJDatetime**.
 <q-j-datetime
     v-model="model"
     float-label="Field Label"
-    :first-day-of-week="6"
     type="datetime"
     format="YYYY/MM/DD"
     default-view="day"
