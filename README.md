@@ -11,6 +11,7 @@ This component have been created just to used in [`quasar-framework`](https://qu
 ## Requirements
 
 [`quasar-framework`](https://quasar-framework.org) 17.10.0+
+
 [`PersianDate`](http://babakhani.github.io/PersianWebToolkit/doc/persian-date) library
 
 ## Installation
