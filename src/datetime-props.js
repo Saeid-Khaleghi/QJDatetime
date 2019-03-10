@@ -1,11 +1,11 @@
-import PersianDate from 'persian-date'
+import { isDate } from './date'
 
 export const modelValidator = v => {
   const type = typeof v
   return (
     v === null || v === undefined ||
     type === 'number' || type === 'string' ||
-    new PersianDate().isPersianDate(v)
+    isDate(v)
   )
 }
 

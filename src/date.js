@@ -1,6 +1,6 @@
 /* eslint no-fallthrough: 0 */
 
-import {isDate, isString} from 'quasar-framework/src/utils/is.js'
+import {isString} from 'quasar-framework/src/utils/is.js'
 import {pad, capitalize} from 'quasar-framework/src/utils/format.js'
 import i18n from 'quasar-framework/src/i18n.js'
 import PersianDate from 'persian-date'
@@ -26,6 +26,10 @@ function formatTimezone(offset, delimeter = '') {
   return sign + pad(hours) + delimeter + pad(minutes)
 }
 
+export function isDate (v) {
+  return new PersianDate().isPersianDate(v)
+}
+
 function setMonth(date, newMonth /* 1-based */) {
   const
     test = new PersianDate([date.year(), newMonth]),
@@ -34,13 +38,14 @@ function setMonth(date, newMonth /* 1-based */) {
   date.date(Math.min(days, date.date()))
 }
 
-export function setupDateForPersianDate(date) {
+export function setupDateForPersianDate (date) {
   if (isString(date)) {
     let dd = date.substring(0, 19).replace('T', ' ')
     if (rePersianDateTimeStr.exec(dd) !== null) {
       let datetime = dd.replace(rePersianDateTimeStr, function (match, text) {
-        return match.split('-').join('/');
+        return match.split('-').join('/')
       }).substring(0, 19).split(' ')
+      datetime[1] = (typeof datetime[1] !== 'undefined') ? datetime[1] : '00:00:00'
       date = datetime[0].split('/').concat(datetime[1].split(':')).map(Number)
     }
   }
@@ -248,23 +253,22 @@ export function convertDateToFormat(date, type, format) {
   }
 }
 
-export function getDateBetween(date, min, max) {
+export function getDateBetween (date, min, max) {
   const t = buildDateVal(date)
 
   if (min) {
     const low = buildDateVal(min)
-    if (t < low) {
+    if (t.unix() < low.unix()) {
       return low
     }
   }
 
   if (max) {
     const high = buildDateVal(max)
-    if (t > high) {
+    if (t.unix() > high.unix()) {
       return high
     }
   }
-
   return t
 }
 
@@ -540,7 +544,7 @@ export function matchFormat(format = '') {
 }
 
 export function clone(value) {
-  return new PersianDate().isPersianDate(value) ? value.clone() : value
+  return isDate(value) ? value.clone() : value
 }
 
 export default {
@@ -569,5 +573,6 @@ export default {
   clone,
   setupDateForPersianDate,
   pMonths,
-  pMonthsShort
+  pMonthsShort,
+  isDate
 }
