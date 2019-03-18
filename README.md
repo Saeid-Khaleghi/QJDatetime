@@ -115,4 +115,4 @@ Supports v-model which must be a String, Number or [`PersianDate`](http://babakh
 
 ## License
 
-QJDatetime is free software distributed under the terms of the MIT license.
+QJDatetime is a free software distributed under the terms of the MIT license.
