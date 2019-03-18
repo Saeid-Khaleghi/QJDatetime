@@ -115,4 +115,4 @@ Supports v-model which must be a String, Number or [`PersianDate`](http://babakh
 
 ## License
 
-Media-store is free software distributed under the terms of the MIT license.
+QJDatetime is free software distributed under the terms of the MIT license.
